@@ -33,7 +33,7 @@ DEBUG = os.getenv('DEBUG', 'False') == 'True'
 ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
-    'navatar-api.onrender.com',  # Add your Render URL
+    'https://navatar-api.onrender.com',  # Add your Render URL
 ]
 
 
