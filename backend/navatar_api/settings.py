@@ -33,7 +33,7 @@ DEBUG = os.getenv('DEBUG', 'False') == 'True'
 ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
-    'https://navatar-api.onrender.com',  # Add your Render URL
+    'navatar-api.onrender.com',  # Add your Render URL
 ]
 
 
@@ -99,6 +99,7 @@ DATABASES = {
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # Next.js dev server
     "https://navatar-sigma.vercel.app",
+    "https://navatar-api.onrender.com"
 ]
 
 # REST Framework settings
