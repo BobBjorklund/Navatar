@@ -12,7 +12,7 @@ def health_check(request):
 def upload_audio(request):
     """Upload and analyze audio file"""
     # TODO: Implement
-    return Response({'message': 'Upload endpoint - to be implemented'})
+    return Response({'message': 'heck ya ya boi posted from django'})
 
 @api_view(['POST'])
 def generate_voice_pack(request):
