@@ -88,8 +88,12 @@ DATABASES = {
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # Next.js dev server
     "https://navatar-sigma.vercel.app",
-    "https://navatar-api.onrender.com"
 ]
+CORS_ALLOWED_ORIGIN_REGEXES = [
+    r"^https://navatar-.*-bob-bjorklunds-projects\.vercel\.app$",
+]
+
+CORS_ALLOW_ALL_ORIGINS=True
 
 # REST Framework settings
 REST_FRAMEWORK = {
