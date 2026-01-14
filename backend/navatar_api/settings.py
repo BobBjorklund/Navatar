@@ -22,10 +22,19 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = 'django-insecure-w9wk0kij@1=bge89pi1sqy@n1m-aes3*)w3o5c@vex97pb_t@d'
 
-# SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+import os
+from dotenv import load_dotenv
 
-ALLOWED_HOSTS = []
+load_dotenv()
+
+DEBUG = os.getenv('DEBUG', 'False') == 'True'
+
+
+ALLOWED_HOSTS = [
+    'localhost',
+    '127.0.0.1',
+    'navatar-api.onrender.com',  # Add your Render URL
+]
 
 
 # Application definition
@@ -89,6 +98,7 @@ DATABASES = {
 
 CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",  # Next.js dev server
+    "https://navatar-sigma.vercel.app",
 ]
 
 # REST Framework settings
