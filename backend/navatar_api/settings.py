@@ -90,7 +90,7 @@ CORS_ALLOWED_ORIGINS = [
     "https://navatar-sigma.vercel.app",
 ]
 CORS_ALLOWED_ORIGIN_REGEXES = [
-    r"^https://navatar-.*-bob-bjorklunds-projects\.vercel\.app$",
+    r"^https://*\.vercel\.app$",
 ]
 
 CORS_ALLOW_ALL_ORIGINS=True
