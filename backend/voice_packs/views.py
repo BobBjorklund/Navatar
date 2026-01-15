@@ -32,7 +32,7 @@ def upload_audio(request):
         
         # Call Modal function
         print("Sending to Modal for processing...")
-        process_audio = modal.Function.lookup("navatar", "process_audio")
+        process_audio = modal.Function.from_name("navatar", "process_audio")
         result = process_audio.remote(audio_bytes, audio_file.name)
         
         # Save voice samples locally for later generation
